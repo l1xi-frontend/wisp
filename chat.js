@@ -18,7 +18,7 @@ input_send.addEventListener('input', () => {
   }
 })
 
-send_button.addEventListener('click', () => {
+function sendMessage() {
   let message = document.createElement('span')
   let timeElement = document.createElement('span')
   let container_messege = document.createElement('span')
@@ -39,6 +39,13 @@ send_button.addEventListener('click', () => {
   send_button.disabled = true
   send_button.style.cssText = `opacity: 50%`
   
-  
+}
+
+send_button.addEventListener('click', sendMessage)
+
+input_send.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter' && !send_button.disabled) {
+    sendMessage()
+  }
 })
 
