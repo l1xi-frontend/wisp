@@ -34,6 +34,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 
+
 body {
   font-family: 'Fira Sans Condensed';
   background-color: var(--blue);
@@ -74,10 +75,8 @@ button {
 header {
   padding: 0 10px;
   background-color: var(--blue);
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
 }
 
 .header_menu_span {
@@ -103,7 +102,7 @@ header {
 
 .input-field {
 	display: flex;
-  position: fixed;
+	position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -144,15 +143,11 @@ header {
 .main {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  padding-bottom: 61px;
 }
 
 .chat {
   background-color: var(--blue);
-  flex: 1;
-  overflow: auto; 
-  margin-bottom: 60px;
-  margin-top: 41px;
   display: flex;
   flex-direction: column;
   padding: 0 10px;
@@ -179,7 +174,6 @@ header {
   font-size: 12px;
   padding-top: 5px;
 }
-
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
