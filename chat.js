@@ -91,8 +91,8 @@ function applyTheme(thema_name) {
     root.style.setProperty('--black', '#000')
   } else if (thema_name === 'dark-theme') {
     root.style.setProperty('--blue', '#1e1f24')
-    root.style.setProperty('--light-blue', '#4e5963')
-    root.style.setProperty('--light-blue-transparent', '#4e596360')
+    root.style.setProperty('--light-blue', '#3F464C')
+    root.style.setProperty('--light-blue-transparent', '#3F464C60')
     root.style.setProperty('--black', '#fff')
   }
   
